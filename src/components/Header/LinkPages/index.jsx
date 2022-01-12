@@ -6,12 +6,12 @@ function LinkPage() {
         <div className='link-page'>
             <a href='http://reactplus.vn/'>
                 <div  className='link-wrapper'>
-                    <img src={ require('../../images/vn.png') } alt='vn' />
+                    <img src={ require('../../../assets/images/vn.png') } alt='vn' />
                 </div>
             </a>
             <a href='https://reactplus.com/home'>
                 <div className='link-wrapper'>
-                    <img src={ require('../../images/co-nhat.webp') } alt='jp' />
+                    <img src={ require('../../assets/images/co-nhat.webp') } alt='jp' />
                 </div>
             </a>
         </div>
