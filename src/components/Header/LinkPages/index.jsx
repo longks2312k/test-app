@@ -11,7 +11,7 @@ function LinkPage() {
             </a>
             <a href='https://reactplus.com/home'>
                 <div className='link-wrapper'>
-                    <img src={ require('../../assets/images/co-nhat.webp') } alt='jp' />
+                    <img src={ require('../../../assets/images/co-nhat.webp') } alt='jp' />
                 </div>
             </a>
         </div>
