@@ -1,0 +1,47 @@
+.list-new{
+    margin-top: 120px;
+}
+.list-title{
+    justify-content: center;
+    display: block;
+    margin-bottom: 50px;
+}
+.title-1{
+    font-size: 36px;
+    font-weight: 500;
+}
+.title-2{
+    font-weight: 300;
+    margin: 0;
+    color:black
+}
+.under-line{
+    width: 242px;
+    height: 2px;
+    background: rgb(40, 40, 40);
+    margin: 0px auto 30px;
+}
+.list-item{
+    display: flex;
+    justify-content: center;
+    width: 82%;
+    margin: auto;
+}
+.new-img{
+    height: 220px;
+    width: 330px;
+}
+.title-news{
+    font-weight: 600;
+    margin-left: 10px;
+    max-width: 340px;
+    color:black;
+    text-align: left;
+}
+.text-news{
+    font-weight: 300;
+    margin-left: 10px;
+    max-width: 340px;
+    color:black;
+    text-align: left;
+}
