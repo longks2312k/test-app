@@ -5,7 +5,6 @@ function Title(props) {
     return (
         <div className='banner-title'>
             <img src={ require('../../../../assets/images/slide-title-border.png') } alt='vn' />
-            <h3>{props.data}</h3>
             <img src={ require('../../../../assets/images/slide-title-border.png') } alt='vn' />
         </div>
     );
