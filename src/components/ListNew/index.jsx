@@ -1,26 +1,27 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React from 'react';
+import React, { useMemo } from 'react';
 import './style.scss'
 
-const newList = [
-    {
-        'images' : 'https://react-plus.com/images/pages/HomePage/1.jpg',
-        'title' : 'ReactとReact Nativeの テクノロジー企業',
-        'text' : '当社はReactとReact Nativeのスペシャリストです。',
-    },
-    {
-        'images' : 'https://react-plus.com/images/pages/HomePage/2.jpg',
-        'title' : '24時間365日対応の迅速なレスポンス',
-        'text' : 'Slackにご投稿いただければ、時間を問わず迅速にサポートいたします。',
-    },
-    {
-        'images' : 'https://react-plus.com/images/pages/HomePage/3.jpeg',
-        'title' : '真のエキスパート',
-        'text' : '当社の開発者は、人生の大半をReactとReact Nativeに情熱を注いでいると言っても過言ではありません。',
-    },
-]
 
 function ListNew(props) {
+    const newList = useMemo(() => [
+        {
+            'images' : 'https://react-plus.com/images/pages/HomePage/1.jpg',
+            'title' : 'ReactとReact Nativeの テクノロジー企業',
+            'text' : '当社はReactとReact Nativeのスペシャリストです。',
+        },
+        {
+            'images' : 'https://react-plus.com/images/pages/HomePage/2.jpg',
+            'title' : '24時間365日対応の迅速なレスポンス',
+            'text' : 'Slackにご投稿いただければ、時間を問わず迅速にサポートいたします。',
+        },
+        {
+            'images' : 'https://react-plus.com/images/pages/HomePage/3.jpeg',
+            'title' : '真のエキスパート',
+            'text' : '当社の開発者は、人生の大半をReactとReact Nativeに情熱を注いでいると言っても過言ではありません。',
+        },
+    ],[])
+    
     return (
         <div className='list-new'>
             <div className='list-title'>
