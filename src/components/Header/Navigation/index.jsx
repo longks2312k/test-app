@@ -1,22 +1,24 @@
 import React from 'react';
+import { Routes, Route, Link } from "react-router-dom";
+
 import './style.scss'
 
 const navList = [
     {
         'title':'ホーム',
-        'link':''
+        'link':'/'
     },
     {
         'title':'会社情報',
-        'link':''
+        'link':'/about'
     },
     {
         'title':'サービス',
-        'link':''
+        'link':'/cultural'
     },
     {
         'title':'テクニカルスタック',
-        'link':'',
+        'link':'/recruiment',
         'dropList':[
             {
                 'title':'Reactのテクニカルスタック',
@@ -38,15 +40,15 @@ const navList = [
     },
     {
         'title':'当社のチーム',
-        'link':''
+        'link':'/events'
     },
     {
         'title':'プロジェクト',
-        'link':''
+        'link':'/forcommuty'
     },
     {
         'title':'お問い合わせ',
-        'link':''
+        'link':'/blog'
     },
 ]
 
@@ -58,7 +60,7 @@ function Navigation(props) {
                     navList.map((data, i) => {
                         return(
                             <li key={i} className='navItem'>
-                                <a href={data.link} className=''>{data.title}</a>
+                                <Link to={data.link} className=''>{data.title}</Link>
                             </li>
                         )
                     })
